@@ -234,3 +234,102 @@ html {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.logo {
+  font-family: "Playfair Display SC", serif;
+  font-size: 34.6px;
+  color: #50E3C2;
+  letter-height: auto;
+  letter-spacing: auto;
+}
+
+h1 {
+  font-family: "Playfair Display SC", serif;
+  font-size: 111.2px;
+  color: #063974;
+  letter-height: auto;
+  letter-spacing: auto;
+}
+
+h3 {
+  font-family: "Lato", sans-serif;
+  font-size: 62px;
+  color: #0C5F4C;
+  letter-height: 58px;
+  letter-spacing: 6.7px;
+}
+
+h6 {
+  font-family: "Lato", sans-serif;
+  font-size: 58px;
+  letter-spacing: 9px;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+nav ul {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  color: #2C2C2C;
+  letter-height: 29px;
+  letter-spacing: 1px;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 50px;
+}
+
+nav ul li a {
+  color: #FAFFFE;
+}
+
+nav ul li a:hover {
+  color: #50E3C2;
+}
+
+nav ul li a:focus {
+  color: #50E3C2;
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.logo-nav-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home header {
+  background-image: url(../../assets/home-image-1.jpg);
+}
+
+.blog header {
+  background-image: url(../../assets/blog-image-1.jpg);
+}
+
+.contact header {
+  background-image: url(../../assets/contact-image-1.jpg);
+}
