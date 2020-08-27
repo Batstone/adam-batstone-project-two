@@ -1,13 +1,17 @@
 $playfair: 'Playfair Display SC', serif;
 $lato: 'Lato', sans-serif;
 
-@mixin font($font-family, $font-size, $color: $black, $letter-spacing: auto, $letter-height: auto) {
+@mixin font($font-family, $font-size, $color: $black, $letter-spacing: auto, $line-height: auto) {
     font-family: $font-family;
     font-size: $font-size;
     color: $color;
-    letter-height: $letter-height;
     letter-spacing: $letter-spacing;
+    line-height: $line-height;
 }
+
+
+
+
 
 .logo {
     @include font($playfair, 34.6px, $greenishCyan)
@@ -18,45 +22,70 @@ h1 {
 }
 
 h3 {
-    @include font($lato, 62px, $spruce, 6.7px, 58px)
+    @include font($lato, 62px, $spruce, 6.7px, 58px);
+    margin: 0;
+    padding: 0;
+}
+
+h4 {
+    @include font($lato, 35px, $spruce, 3.8px);
+    margin: 0;
+    padding: 0;
 }
    
 h6 {
-    font-family: $lato;
-    font-size: 58px;
-    letter-spacing: 9px;
+    @include font($lato, 30px, $spruce, 3.2px, 32px);
+    margin: 0;
+    padding: 0;
 }
 
 a {
     text-decoration: none;
+    color: $iceBlue;
+}
+
+img {
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 header {
-    height: 90vh;
+    height: 80vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat
 }
 
-nav ul {
+nav {
+    ul {
         @include font($lato, 20px, $black, 1px, 29px);
-        list-style-type: none;
         display: flex;
         li {
-            margin-left: 50px;
-            a {
-                color: $iceBlue;
-                
-                &:hover {
-                    color: $greenishCyan;
-                }   
-
-                &:focus {
-                    color: $greenishCyan;
-                }
+            margin-left: 50px
+        }
+        a {
+            color: $iceBlue;
+            &:hover {
+                color: $greenishCyan;
+            }   
+            &:focus {
+                color: $greenishCyan;
             }
         }
     }
+}
+
+footer {
+    background-color: $black;
+    color: $iceBlue;
+    text-align: center;
+    padding: 5px;
+}
 
 
 .wrapper {
@@ -71,13 +100,6 @@ nav ul {
     align-items: center;
 }
 
-
-.home {
-    header {
-        background-image: url(../../assets/home-image-1.jpg);
-    }
-}
-
 .blog {
     header {
         background-image: url(../../assets/blog-image-1.jpg)
@@ -89,4 +111,132 @@ nav ul {
         background-image: url(../../assets/contact-image-1.jpg)
         
     }
+}
+
+.home {
+    header {
+        position: relative;
+    }
+}
+
+
+.home {
+    header {
+        background-image: url(../../assets/home-image-1.jpg);
+    }
+}
+
+/* find a better place for what's below!!!! */
+
+.more-info-link {
+    @include font($playfair, 20px, 32px, 1px);
+    background-color: $twilightBlue;
+    padding: 10px;
+}
+
+.main-header {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 25%;
+    h3 {
+        margin: 0;
+    }
+    h1 {
+        margin: 0;
+    }
+}
+
+.header-img-container {    
+    position: absolute;
+    z-index: 0;
+    width: 650px;
+    top: 35%;
+}
+
+
+
+.visit-guyana {
+    background-color: $iceBlue;
+    padding: 300px 0 75px;
+}
+
+.visit-guyana-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.visit-guyana-content-container {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    a {
+        width: 204px;
+    }
+}
+
+.visit-guyana-img-container {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    margin-left: 75px;
+    box-shadow: -15px 15px $greenishCyan;
+}
+
+.gallery {
+    background-color: $lightLightBlue;
+    padding: 75px 0;
+}
+
+.gallery-images {
+        display: flex;
+        justify-content: space-between;
+        li {
+            margin-right: 25px
+        }
+        li:last-child {
+            margin-right: 0; 
+        }          
+}
+
+
+.links {
+    background-color: $iceBlue;
+    padding: 75px 0 125px;
+}
+
+.link-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+    .link-container {
+        width: calc(50% - 10px);
+        margin-right: 10px;
+    }
+    .link-container:nth-of-type(2n) {
+        margin-right: 0;
+    }
+}
+
+.link-container i {
+    background-color: $greenishCyan;
+    color: $iceBlue;
+    border-radius: 50%;
+    padding: 8px
+  
+}
+
+.free-trip {
+    background-color: $lightLightBlue;
+    padding: 75px 0;
+}
+
+.free-trip-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 8% 20% 0 20%;
+    text-align: center;
 }
