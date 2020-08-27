@@ -319,15 +319,22 @@ nav ul li {
 }
 
 nav ul a {
+  display: inline-block;
   color: #FAFFFE;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 nav ul a:hover {
   color: #50E3C2;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 nav ul a:focus {
   color: #50E3C2;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 footer {
@@ -416,6 +423,8 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .visit-guyana-content-container {
@@ -426,7 +435,7 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 75%;
+  width: 60%;
 }
 
 .visit-guyana-content-container a {
@@ -437,11 +446,7 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   width: 300px;
-  margin-left: 75px;
   -webkit-box-shadow: -15px 15px #50E3C2;
           box-shadow: -15px 15px #50E3C2;
 }
@@ -461,11 +466,25 @@ footer {
 }
 
 .gallery-images li {
-  margin-right: 25px;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
 }
 
-.gallery-images li:last-child {
-  margin-right: 0;
+.gallery-images li img {
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.gallery-images li img:hover {
+  color: #50E3C2;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.gallery-images li img:focus {
+  color: #50E3C2;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .links {
@@ -485,12 +504,7 @@ footer {
 }
 
 .link-flex .link-container {
-  width: calc(50% - 10px);
-  margin-right: 10px;
-}
-
-.link-flex .link-container:nth-of-type(2n) {
-  margin-right: 0;
+  width: 45%;
 }
 
 .link-container i {

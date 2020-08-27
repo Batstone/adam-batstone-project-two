@@ -66,15 +66,19 @@ nav {
         @include font($lato, 20px, $black, 1px, 29px);
         display: flex;
         li {
-            margin-left: 50px
+            margin-left: 50px;
         }
         a {
+            display: inline-block;
             color: $iceBlue;
+            transition: .2s;
             &:hover {
                 color: $greenishCyan;
+                transform: scale(1.2)
             }   
             &:focus {
                 color: $greenishCyan;
+                transform: scale(1.2);
             }
         }
     }
@@ -118,7 +122,6 @@ footer {
         position: relative;
     }
 }
-
 
 .home {
     header {
@@ -164,12 +167,13 @@ footer {
 .visit-guyana-flex {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .visit-guyana-content-container {
     display: flex;
     flex-direction: column;
-    width: 75%;
+    width: 60%;
     a {
         width: 204px;
     }
@@ -177,9 +181,7 @@ footer {
 
 .visit-guyana-img-container {
     display: flex;
-    justify-content: center;
     width: 300px;
-    margin-left: 75px;
     box-shadow: -15px 15px $greenishCyan;
 }
 
@@ -192,11 +194,19 @@ footer {
         display: flex;
         justify-content: space-between;
         li {
-            margin-right: 25px
+            flex-basis: 30%;
+            img {
+                transition: .5s;
+                &:hover {
+                    color: $greenishCyan;
+                    transform: scale(1.1)
+                }   
+                &:focus {
+                    color: $greenishCyan;
+                    transform: scale(1.1);
+            }
         }
-        li:last-child {
-            margin-right: 0; 
-        }          
+    }
 }
 
 
@@ -211,12 +221,13 @@ footer {
     flex-wrap: wrap;
     
     .link-container {
-        width: calc(50% - 10px);
-        margin-right: 10px;
+        width: 45%;
+       
     }
-    .link-container:nth-of-type(2n) {
-        margin-right: 0;
-    }
+    
+    // .link-container:nth-of-type(2n) {
+    //     margin-right: 0;
+    // }
 }
 
 .link-container i {
