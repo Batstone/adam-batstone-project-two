@@ -3,7 +3,9 @@
 
 
 
-
+.contact-main-header {
+    
+}
 
 .contact-flex {
     display: flex;
@@ -13,10 +15,11 @@
 .contact-form {
   display: flex;
     flex-direction: column;
-    width: 55%;
-    position: relative;
+    width: 65%;
+    background-color: $iceBlue;
     padding: 40px;
     box-shadow: 15px 15px $greenishCyan;
+    margin-top: -75px;
     margin-bottom: 100px;
     form {
         input {

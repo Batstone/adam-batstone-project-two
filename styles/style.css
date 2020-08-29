@@ -345,6 +345,7 @@ nav ul a:focus {
 footer {
   background-color: #2C2C2C;
   text-align: center;
+  margin-top: 150px;
   padding: 5px;
 }
 
@@ -898,11 +899,12 @@ footer p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 55%;
-  position: relative;
+  width: 65%;
+  background-color: #FAFFFE;
   padding: 40px;
   -webkit-box-shadow: 15px 15px #50E3C2;
           box-shadow: 15px 15px #50E3C2;
+  margin-top: -75px;
   margin-bottom: 100px;
 }
 
