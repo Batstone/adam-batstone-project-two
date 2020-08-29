@@ -1,4 +1,3 @@
-
 .blog {
     header {
         background-image: url(../../assets/blog-image-1.jpg);
@@ -97,6 +96,9 @@
     }
 }
 
+
+
+
 .comments-container {
     display: flex;
     flex-direction: column;
@@ -111,8 +113,13 @@
         margin-bottom: 50px;
     }
     .comments-post-img-container {
-       width: 250px;
        margin: 6px 50px 0 0;
+    }
+    .comments-img-1 {
+        width: 400px;
+    }
+    .comments-img-2 {
+        width: 300px;
     }
     .comments-post-text {
         p:first-child {
@@ -120,5 +127,23 @@
             font-weight: bold;
         }
     }
-  
+}
+
+.comments-form {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    .comments-form-top {
+        input {
+            width: 48%;
+        }
+    }
+    .comments-form-middle {
+        textarea {
+            width: 95%;
+        }
+    }
+    .comments-form-bottom {
+
+    }
 }

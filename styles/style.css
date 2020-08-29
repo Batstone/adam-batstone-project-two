@@ -796,8 +796,15 @@ footer p {
 }
 
 .comments-container .comments-post-img-container {
-  width: 250px;
   margin: 6px 50px 0 0;
+}
+
+.comments-container .comments-img-1 {
+  width: 400px;
+}
+
+.comments-container .comments-img-2 {
+  width: 300px;
 }
 
 .comments-container .comments-post-text p:first-child {
@@ -807,4 +814,23 @@ footer p {
   letter-spacing: 2px;
   line-height: 32px;
   font-weight: bold;
+}
+
+.comments-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 75%;
+}
+
+.comments-form .comments-form-top input {
+  width: 48%;
+}
+
+.comments-form .comments-form-middle textarea {
+  width: 95%;
 }
