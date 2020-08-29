@@ -1,0 +1,207 @@
+
+.home {
+    header {
+        background-image: url(../../assets/home-image-1.jpg);
+    }
+}
+
+.header-text {
+    position: relative;
+}
+
+.main-header {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 25%;
+    h3 {
+        margin: 0;
+    }
+    h1 {
+        margin: 0;
+    }
+}
+
+.header-img-container {    
+    position: absolute;
+    z-index: 0;
+    width: 650px;
+    top: 35%;
+}
+
+.visit-guyana {
+    background-color: $iceBlue;
+    padding: 175px 0 75px;
+}
+
+.visit-guyana-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.visit-guyana-content-container {
+    width: 60%;
+    margin-right: 40px;
+
+}
+
+.visit-guyana-img-container {
+    flex-shrink: 0;
+    box-shadow: -15px 15px $greenishCyan;
+}
+
+.gallery {
+    background-color: $lightLightBlue;
+    padding: 75px 0;
+}
+
+.gallery-images {
+        display: flex;
+        justify-content: space-between;
+        li {
+            flex-basis: 30%;
+            img {
+                transition: .8s;
+                &:hover {
+                    color: $greenishCyan;
+                    transform: scale(1.1);
+                    box-shadow: -15px 15px $greenishCyan;
+                }   
+                &:focus {
+                    color: $greenishCyan;
+                    transform: scale(1.1);
+                    box-shadow: -15px 15px $greenishCyan;
+            }
+        }
+    }
+}
+
+
+.links {
+    background-color: $iceBlue;
+    padding: 75px 0 100px;
+}
+
+.links-grid {
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr 8fr;
+    grid-template-rows: 40px 200px 40px 200px;
+    i {
+        background-color: $greenishCyan;
+        color: $iceBlue;
+        margin: auto;
+        padding: 10px;
+        border-radius: 50%;
+    }
+    h6 {
+        margin: auto 10px;
+    }
+    p {
+        margin-left: 10px;
+    }
+    .grid-i-1 {
+        @include grid(1, 1)
+    }
+    .grid-h-1 {
+        @include grid(1, 2)
+    }
+    .grid-p-1 {
+        @include grid(2, 2)
+    }
+    .grid-i-2 {
+        @include grid(1, 3)
+    }
+    .grid-h-2 {
+        @include grid(1, 4)
+    }
+    .grid-p-2 {
+        @include grid(2, 4)
+    }
+    .grid-i-3 {
+        @include grid(3, 1)
+    }
+    .grid-h-3 {
+        @include grid(3, 2)
+    }
+    .grid-p-3 {
+        @include grid(4, 2) 
+    }
+    .grid-i-4 {
+        @include grid(3, 3)
+    }
+    .grid-h-4 {
+        @include grid(3, 4)
+    }
+    .grid-p-4 {
+        @include grid(4, 4)
+    }
+}
+
+.more-info {
+    background-color: $lightLightBlue;
+    padding: 50px 0 75px 0;
+}
+
+
+.more-info-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.more-info-img-container1 {
+    position: relative;
+    width: 700px;
+    img {
+        position: absolute;
+        top: -35%;
+        box-shadow: 15px 15px $greenishCyan;
+    }
+}
+
+.more-info-content-1 {
+    width: 700px;
+    margin-bottom: 50px;
+    p {
+        margin: 10px 75px 30px 0;
+    }
+}
+
+.more-info-img-container-2 {
+    position: relative;
+    width: 700px;
+    img {
+        position: absolute;
+        top: 35%;
+        box-shadow: 15px 15px $greenishCyan;
+    }
+}
+
+.more-info-content-2 {
+    width: 700px;
+    margin-top: 150px;
+    text-align: right;
+    p {
+        margin: 10px 0 30px 75px;
+    }
+}
+
+
+
+
+
+.free-trip {
+    background-color: $lightLightBlue;
+    padding-bottom: 100px;
+}
+
+.free-trip-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 8% 20% 0 20%;
+    text-align: center;
+}
