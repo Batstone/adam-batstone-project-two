@@ -1,7 +1,6 @@
 .blog {
     header {
-        background-image: url(../../assets/blog-image-1.jpg);
-
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url(../../assets/blog-image-1.jpg);
     }
 }
 
@@ -12,7 +11,7 @@
 
 .blog-main-header {
     color: $lightLightBlue;
-    margin-top: 300px
+    margin-top: 225px
 }
 
 .blog-post {
@@ -72,10 +71,6 @@
     }
 }
 
-.blog-right-image-container {
-
-}
-
 .blog-right-container {
     a {
         @include font($lato, 1.3rem, $spruce, 2px, 38px);
@@ -88,7 +83,6 @@
         li {
             padding-left: 25px;;
             position: relative;
-            
         }
         a {
             @include font($lato, 1.3rem, $black, 2px, 32px)

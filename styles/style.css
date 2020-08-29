@@ -373,7 +373,8 @@ footer p {
 }
 
 .contact header {
-  background-image: url(../../assets/contact-image-1.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0))), url(../../assets/contact-image-1.jpg);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url(../../assets/contact-image-1.jpg);
 }
 
 /* find a better place for what's below!!!! */
@@ -388,7 +389,8 @@ footer p {
 }
 
 .home header {
-  background-image: url(../../assets/home-image-1.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0))), url(../../assets/home-image-1.jpg);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url(../../assets/home-image-1.jpg);
 }
 
 .header-text {
@@ -683,7 +685,8 @@ footer p {
 }
 
 .blog header {
-  background-image: url(../../assets/blog-image-1.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0))), url(../../assets/blog-image-1.jpg);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url(../../assets/blog-image-1.jpg);
 }
 
 .flex-container {
@@ -697,7 +700,7 @@ footer p {
 
 .blog-main-header {
   color: #D2F9F1;
-  margin-top: 300px;
+  margin-top: 225px;
 }
 
 .blog-post {
@@ -882,6 +885,19 @@ footer p {
   margin-bottom: 100px;
 }
 
+.contact {
+  background-color: #FAFFFE;
+}
+
+.contact header {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0))), url(../../assets/contact-image-1.jpg);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url(../../assets/contact-image-1.jpg);
+}
+
+.contact-main-header {
+  margin-top: 320px;
+}
+
 .contact-flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -904,7 +920,8 @@ footer p {
   padding: 40px;
   -webkit-box-shadow: 15px 15px #50E3C2;
           box-shadow: 15px 15px #50E3C2;
-  margin-top: -75px;
+  margin-top: -80px;
+  margin-left: -15px;
   margin-bottom: 100px;
 }
 
@@ -923,16 +940,34 @@ footer p {
   margin-bottom: 50px;
 }
 
-.contact-form-right-containter ul li {
+.contact-form-right-container {
+  margin: 100px 0 0 40px;
+}
+
+.contact-form-right-container ul {
+  margin-bottom: 20px;
+}
+
+.contact-form-right-container ul li {
   display: inline-block;
 }
 
-.contact-form-right-containter ul a {
-  color: #2C2C2C;
-  font-size: 3rem;
+.contact-form-right-container ul a {
+  padding-right: 20px;
 }
 
-.contact-info address p:first-child {
+.fab {
+  width: 15px;
+  color: #2C2C2C;
+  font-size: 1.8rem;
+}
+
+.fab:hover {
+  color: #0C5F4C;
+}
+
+.contact-info address h6 {
+  color: #2C2C2C;
   font-weight: bold;
   margin-bottom: 20px;
 }
