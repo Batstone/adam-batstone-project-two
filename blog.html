@@ -27,11 +27,11 @@
         </div>
 
 
-        <div class="wrapper">
-            <div class="blog-main-header">
-                <h2>Blog</h2>
-            </div>
+
+        <div class="blog-main-header wrapper">
+            <h2>Blog</h2>
         </div>
+
 
     </header>
 </body>
@@ -39,9 +39,7 @@
 
 <div class="flex-container">
     <section class="blog-post">
-
         <div class="blog-post-flex">
-
             <div class="blog-post-image-container">
                 <img src="./assets/post-image.jpg"
                     alt="A view from the beach looking up the walkway to one of the beach houses">
@@ -99,16 +97,15 @@
             <img src="./assets/sidebar-image.jpg" alt="A view from the beach, looking at two beach houses">
         </div>
 
-        <div class="blog-right-container">
-            <aside>
-                <h6>Our mission</h6>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto dolorum ipsam exercitationem ab fugit
-                    nulla
-                    quidem cumque reprehenderit, error est.
-                </p>
-                <a href="">Find out more.</a>
-            </aside>
-        </div>
+        <aside class="blog-right-container">
+
+            <h6>Our mission</h6>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto dolorum ipsam exercitationem ab fugit
+                nulla
+                quidem cumque reprehenderit, error est.
+            </p>
+            <a href="">Find out more.</a>
+        </aside>
 
         <div class="recent-posts">
             <h6>Recent Posts</h6>
@@ -120,8 +117,9 @@
             </ul>
         </div>
 
+
+    </section>
 </div>
-</section>
 
 <div class="comments-container">
     <h6 class="wrapper">Comments:</h6>
@@ -162,17 +160,20 @@
 
     <div class="wrapper">
 
-        <form action="">
-            <div class="comments-form-top">
-                <input type="text" placeholder="Name">
-                <input type="text" placeholder="Email address">
-            </div>
-            <div class="comments-form-middle">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Comment"></textarea>
-            </div>
-            <div class="comments-form-bottom">
-                <button type="submit">POST COMMENT</button>
-            </div>
+        <form action="submit">
+
+            <fieldset>
+                <label for="name">Your Name:</label>
+                <input type="text" name="Name" id="name" placeholder="Name">
+                <label for="email">Your Email:</label>
+                <input type="text" name="Email" id="email" placeholder="Email address">
+                <label for="comment">Your Comment:</label>
+                <textarea name="" id="" cols="30" rows="10" label="comment" placeholder="Comment"></textarea>
+            </fieldset>
+
+
+            <button type="submit">POST COMMENT</button>
+
         </form>
 
     </div>

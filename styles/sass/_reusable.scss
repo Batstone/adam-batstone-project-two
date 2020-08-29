@@ -23,7 +23,7 @@ h1 {
 }
 
 h2 {
-    @include font($lato, 5.5rem, 9px, 58px)
+    @include font($lato, 5.5rem, $lightLightBlue, 6.7px, 58px)
 }
 
 h3 {
@@ -57,9 +57,32 @@ img {
     width: 100%;
 }
 
+button {
+    @include font($playfair, 1.3rem, $iceBlue, 1px, 32px);
+    background-color: $twilightBlue;
+    border: none;
+    padding: 5px;
+}
+
+form {
+    input {
+        padding-bottom: 25px;
+        border: none;
+        border-bottom: 2px solid $greenishCyan;
+    }
+ 
+    textarea {
+        font-family: $lato;
+        border: 2px solid $greenishCyan;
+    }
+    label {
+        position: absolute; 
+        left: -999rem;
+    }
+}
 
 header {
-    height: 80vh;
+    height: 50vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat
@@ -109,8 +132,8 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 20px;
 }
-
 
 .contact {
     header {

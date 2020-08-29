@@ -27,49 +27,68 @@
         </div>
 
 
-        <div class="main-header">
+        <div class="contact-main-header wrapper">
             <h2>Get in Touch</h2>
         </div>
     </header>
 
-    <section class="contact-form">
-        <div class="contact-form-container">
-            <form action="">
-                <input type="text" placeholder="Name">
-                <input type="text" placeholder="Email address">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
-            </form>
+    <div class="wrapper">
+        <div class="contact-flex">
+
+            <section class="contact-form">
+
+
+                <form action="submit">
+
+                    <fieldset>
+                        <label for="name">Your Name:</label>
+                        <input type="text" name="Name" id="name" placeholder="Name">
+                        <label for="email">Your Email:</label>
+                        <input type="text" name="Email" id="email" placeholder="Email address">
+                        <label for="comment">Your Comment:</label>
+                        <textarea name="" id="" cols="30" rows="10" label="comment" placeholder="Comment"></textarea>
+                    </fieldset>
+
+
+                    <button type="submit">POST COMMENT</button>
+
+                </form>
+
+
+
+            </section>
+
+            <section class="contact-form-right">
+
+                <aside class="contact-form-right-container">
+                    <ul>
+                        <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                        <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fab fa-whatsapp"></i></a></li>
+                    </ul>
+
+                    <div class="contact-info">
+                        <address>
+                            <p>info@email.com</p>
+                            <p>123 - 456 - 7890</p>
+                            <p>Unit 10</p>
+                            <p>Toronto, Ontario</p>
+                            <p>M5V2D5</p>
+                        </address>
+                    </div>
+                </aside>
+
+
+
+            </section>
+
+
+
+
         </div>
 
-    </section>
-
-    <section class="contact-form-right">
-        <div class="contact-form-right-container">
-
-            <ul>
-                <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href=""><i class="fab fa-instagram"></i></a></li>
-                <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                <li><a href=""><i class="fab fa-whatsapp"></i></a></li>
-            </ul>
-
-
-
-
-
-            <div class="contact-info">
-                <p>info@email.com</p>
-                <p>123 - 456 - 7890</p>
-                <p>Unit 10</p>
-                <p>Toronto, Ontario</p>
-                <p>M5V2D5</p>
-            </div>
-        </div>
-
-
-
-    </section class>
-
+    </div>
 
 
     <footer>
@@ -77,7 +96,7 @@
     </footer>
 
 
-
+    <script src="https://kit.fontawesome.com/ae5be4dc98.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

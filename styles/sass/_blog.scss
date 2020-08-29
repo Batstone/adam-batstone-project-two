@@ -12,12 +12,10 @@
 
 .blog-main-header {
     color: $lightLightBlue;
-    margin-top: 250px;
+    margin-top: 300px
 }
 
-
 .blog-post {
-    position: relative;
     color: $lightLightBlue;
 }
 
@@ -25,7 +23,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    width: 90%;
+    max-width: 70%;
     margin: -175px 0 50px;
     border-right: 5px solid $greenishCyan;
     border-bottom: 5px solid $greenishCyan;
@@ -88,7 +86,9 @@
 .recent-posts {
     ul {
         li {
-            list-style-type: disc;
+            padding-left: 25px;;
+            position: relative;
+            
         }
         a {
             @include font($lato, 1.3rem, $black, 2px, 32px)
@@ -96,13 +96,21 @@
     }
 }
 
+.recent-posts ul li::before {
+    position: absolute;
+    content: '\2022';
+    color: $greenishCyan;
+    display: inline-block;
+    font-size: 2rem;
+    left: 0;
+}
 
 
 
 .comments-container {
     display: flex;
     flex-direction: column;
-    width: 65%;
+    max-width: 50%;
     h6 {
         color: $black;
         font-weight: bold;
@@ -116,10 +124,10 @@
        margin: 6px 50px 0 0;
     }
     .comments-img-1 {
-        width: 400px;
+        width: 350px;
     }
     .comments-img-2 {
-        width: 300px;
+        width: 250px;
     }
     .comments-post-text {
         p:first-child {
@@ -132,18 +140,23 @@
 .comments-form {
     display: flex;
     flex-direction: column;
-    width: 75%;
-    .comments-form-top {
+    width: 55%;
+    position: relative;
+    margin-bottom: 100px;
+    form {
+        
         input {
-            width: 48%;
+            width: calc(50% - 2px);
+            margin-bottom: 25px;
         }
-    }
-    .comments-form-middle {
         textarea {
-            width: 95%;
+            width: 100%;
+            margin-bottom: 25px;
+        }
+        button {
+            width: 100%;
+            margin-bottom: 100px;
         }
     }
-    .comments-form-bottom {
-
-    }
+  
 }
