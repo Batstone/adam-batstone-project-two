@@ -687,8 +687,8 @@ footer p {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  width: 70%;
-  margin: -175px 0 100px;
+  width: 90%;
+  margin: -175px 0 50px;
   border-right: 5px solid #50E3C2;
   border-bottom: 5px solid #50E3C2;
 }
@@ -703,6 +703,15 @@ footer p {
   background-color: #FAFFFE;
 }
 
+.blog-post-container h6 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.blog-post-container article p:last-child {
+  margin-bottom: 50px;
+}
+
 .blog-author {
   font-family: "Lato", sans-serif;
   font-size: 1.2rem;
@@ -712,6 +721,7 @@ footer p {
   color: #063974;
   font-style: italic;
   font-size: 1.2rem;
+  margin-bottom: 25px;
 }
 
 .blog-author span {
@@ -730,6 +740,25 @@ footer p {
   margin-top: 150px;
 }
 
+.blog-right h6 {
+  font-family: "Lato", sans-serif;
+  font-size: 1.4rem;
+  color: #063974;
+  letter-spacing: 2.8px;
+  line-height: auto;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.blog-right-container a {
+  font-family: "Lato", sans-serif;
+  font-size: 1.3rem;
+  color: #0C5F4C;
+  letter-spacing: 2px;
+  line-height: 38px;
+  font-weight: bold;
+}
+
 .recent-posts ul li {
   list-style-type: disc;
 }
@@ -740,4 +769,42 @@ footer p {
   color: #2C2C2C;
   letter-spacing: 2px;
   line-height: 32px;
+}
+
+.comments-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 65%;
+}
+
+.comments-container h6 {
+  color: #2C2C2C;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.comments-container .comments-post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.comments-container .comments-post-img-container {
+  width: 250px;
+  margin: 6px 50px 0 0;
+}
+
+.comments-container .comments-post-text p:first-child {
+  font-family: "Lato", sans-serif;
+  font-size: 1.3rem;
+  color: #063974;
+  letter-spacing: 2px;
+  line-height: 32px;
+  font-weight: bold;
 }

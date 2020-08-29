@@ -26,8 +26,8 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    width: 70%;
-    margin: -175px 0 100px;
+    width: 90%;
+    margin: -175px 0 50px;
     border-right: 5px solid $greenishCyan;
     border-bottom: 5px solid $greenishCyan;
 }
@@ -41,6 +41,15 @@
 .blog-post-container {
     margin-top: 50px;
     background-color: $iceBlue;
+    h6 {
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    article {
+        p:last-child {
+            margin-bottom: 50px;
+        }
+    }
 }
 
 .blog-author {
@@ -48,21 +57,33 @@
     color: $twilightBlue;
     font-style: italic;
     font-size: 1.2rem;
+    margin-bottom: 25px;
     span {
         font-weight: bold;
     }
 }
-
 
 .blog-right {
     display: flex;
     flex-direction: column;
     width: 30%;
     margin-top: 150px;
+    h6 {
+        @include font($lato, 1.4rem, $twilightBlue, 2.8px);
+        font-weight: bold;
+        margin: 15px 0;
+    }
 }
 
 .blog-right-image-container {
 
+}
+
+.blog-right-container {
+    a {
+        @include font($lato, 1.3rem, $spruce, 2px, 38px);
+        font-weight: bold;
+    }
 }
 
 .recent-posts {
@@ -74,4 +95,30 @@
             @include font($lato, 1.3rem, $black, 2px, 32px)
         }
     }
+}
+
+.comments-container {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    h6 {
+        color: $black;
+        font-weight: bold;
+        margin-bottom: 50px;
+    }
+    .comments-post {
+        display: flex;
+        margin-bottom: 50px;
+    }
+    .comments-post-img-container {
+       width: 250px;
+       margin: 6px 50px 0 0;
+    }
+    .comments-post-text {
+        p:first-child {
+            @include font($lato, 1.3rem, $twilightBlue, 2px, 32px);
+            font-weight: bold;
+        }
+    }
+  
 }
