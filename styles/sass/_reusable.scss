@@ -82,7 +82,7 @@ form {
 }
 
 header {
-    height: 50vh;
+    height: 60vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat
@@ -115,7 +115,7 @@ nav {
 footer {
     background-color: $black;
     text-align: center;
-    margin-top: 150px;
+    margin-top: 50px;
     padding: 5px;
     p {
         color: $iceBlue;
@@ -132,7 +132,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 20px;
+    padding-top: 30px;
 }
 
 .contact {
