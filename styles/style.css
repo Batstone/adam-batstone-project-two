@@ -397,26 +397,25 @@ footer p {
   position: relative;
 }
 
-.main-header {
+.home-main-header {
   position: absolute;
-  z-index: 1;
-  top: 50%;
+  z-index: 2;
   left: 25%;
+  top: 200px;
 }
 
-.main-header h3 {
+.home-main-header h3 {
   margin: 0;
 }
 
-.main-header h1 {
+.home-main-header h1 {
   margin: 0;
 }
 
 .header-img-container {
   position: absolute;
-  z-index: 0;
-  width: 650px;
-  top: 35%;
+  width: 600px;
+  top: 10%;
 }
 
 .visit-guyana {
@@ -619,19 +618,17 @@ footer p {
 }
 
 .more-info-img-container1 {
-  position: relative;
-  width: 700px;
+  width: 40%;
+  margin-top: -100px;
 }
 
 .more-info-img-container1 img {
-  position: absolute;
-  top: -35%;
   -webkit-box-shadow: 15px 15px #50E3C2;
           box-shadow: 15px 15px #50E3C2;
 }
 
 .more-info-content-1 {
-  width: 700px;
+  width: 600px;
   margin-bottom: 50px;
 }
 
@@ -640,25 +637,31 @@ footer p {
 }
 
 .more-info-img-container-2 {
-  position: relative;
-  width: 700px;
+  width: 40%;
+  margin-bottom: -200px;
 }
 
 .more-info-img-container-2 img {
-  position: absolute;
-  top: 35%;
   -webkit-box-shadow: 15px 15px #50E3C2;
           box-shadow: 15px 15px #50E3C2;
 }
 
 .more-info-content-2 {
-  width: 700px;
-  margin-top: 150px;
+  width: 600px;
+  margin-top: 15px;
   text-align: right;
 }
 
 .more-info-content-2 p {
-  margin: 10px 0 30px 75px;
+  margin: 0px 0 30px 75px;
+}
+
+.banner-img {
+  background: url(../../assets/banner-image.jpg);
+  width: 100%;
+  margin: 0 auto;
+  height: 500px;
+  background-repeat: no-repeat;
 }
 
 .free-trip {
@@ -680,7 +683,6 @@ footer p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 8% 20% 0 20%;
   text-align: center;
 }
 
