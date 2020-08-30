@@ -1,6 +1,6 @@
 .blog {
     header {
-        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url(../../assets/blog-image-1.jpg);
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url(../../assets/blog-image-1.jpg);  
     }
 }
 
@@ -11,7 +11,7 @@
 
 .blog-main-header {
     color: $lightLightBlue;
-    margin-top: 225px
+    margin-top: 175px
 }
 
 .blog-post {
@@ -22,13 +22,15 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    max-width: 70%;
+    width: 90%;
     margin: -175px 0 50px;
-    border-right: 5px solid $greenishCyan;
-    border-bottom: 5px solid $greenishCyan;
+    border-right: 3px solid $greenishCyan;
+    border-bottom: 3px solid $greenishCyan;
 }
 
-.blog-post-image-container {
+.blog-post-img-container {
+    width: 99%;
+    margin-top: -5%;
     img {
         box-shadow: 15px 15px $greenishCyan;
     }
@@ -61,10 +63,10 @@
 .blog-right {
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 20%;
     margin-top: 150px;
     h6 {
-        @include font($lato, calc(.7rem + .7vw), $twilightBlue, 2.8px);
+        @include font($lato, calc(.7rem + .7vw), $twilightBlue, calc(.062rem + .062vw));
         font-weight: bold;
         margin: 15px 0;
     }
@@ -72,8 +74,16 @@
 
 .blog-right-container {
     a {
-        @include font($lato, calc(.65rem + .65vw), $spruce, 2px, 38px);
+        @include font($lato, calc(.65rem + .65vw), $spruce, calc(.062rem + .062vw), calc(1.18rem + 1.18vw));
         font-weight: bold;
+        &:hover {
+            background-color: $transparent;
+            color: $greenishCyan;
+        }
+        &:focus {
+            background-color: $transparent;
+            color: $greenishCyan;
+        }
     }
 }
 
@@ -84,8 +94,17 @@
             position: relative;
         }
         a {
-            @include font($lato, calc(.65rem + .65vw), $black, 2px, 32px)
+            @include font($lato, calc(.65rem + .65vw), $black, calc(.062rem + .062vw), calc(1rem + 1vw));
+            &:hover {
+                background-color: $transparent;
+                color: $greenishCyan;
+            }
+            &:focus {
+                background-color: $transparent;
+                color: $greenishCyan;
+            }
         }
+
     }
 }
 
@@ -97,8 +116,6 @@
     font-size: calc(1rem + 1vw);
     left: 0;
 }
-
-
 
 .comments-container {
     display: flex;
@@ -124,7 +141,7 @@
     }
     .comments-post-text {
         p:first-child {
-            @include font($lato, calc(.65rem + .65vw), $twilightBlue, 2px, 32px);
+            @include font($lato, calc(.65rem + .65vw), $twilightBlue, calc(.062rem + .062vw), calc(1rem + 1vw));
             font-weight: bold;
         }
     }
@@ -137,7 +154,6 @@
     position: relative;
     margin-bottom: 100px;
     form {
-        
         input {
             width: calc(50% - 2px);
             margin-bottom: 25px;
@@ -151,5 +167,4 @@
             margin-bottom: 100px;
         }
     }
-  
 }

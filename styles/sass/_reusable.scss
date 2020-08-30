@@ -1,5 +1,6 @@
 $playfair: 'Playfair Display SC', serif;
 $lato: 'Lato', sans-serif;
+$transparent:rgba(0, 0, 0, 0.0);
 
 @mixin font($font-family, $font-size, $color: $black, $letter-spacing: auto, $line-height: auto) {
     font-family: $font-family;
@@ -23,34 +24,40 @@ h1 {
 }
 
 h2 {
-    @include font($lato, cacl(2.2rem + 2.2vw), $lightLightBlue, 6.7px, 58px)
+    @include font($lato, calc(2.2rem + 2.2vw), $lightLightBlue, calc(.18rem + .18vw), calc(1.8rem + 1.8vw))
 }
 
 h3 {
-    @include font($lato, calc(2rem + 2vw), $spruce, 6.7px, 58px);
+    @include font($lato, calc(2rem + 2vw), $spruce, calc(.18rem + .18vw), calc(1.8rem + 1.8vw));
     margin: 0;
     padding: 0;
 }
 
 h4 {
-    @include font($lato, calc(1.1rem + 1.1vw), $spruce, 3.8px);
+    @include font($lato, calc(1.1rem + 1.1vw), $spruce, calc(.1rem + .1vw));
     margin: 0;
     padding: 0;
 }
    
 h6 {
-    @include font($lato, calc(1rem + 1vw), $spruce, 3.2px, 32px);
+    @include font($lato, calc(1rem + 1vw), $spruce, calc(.09rem + .09vw), calc(1rem + 1vw));
     margin: 0;
     padding: 0;
 }
 
 p {
-    @include font($lato, calc(.6rem + .6vw), $black, 2px, 32px)
+    @include font($lato, calc(.6rem + .6vw), $black, calc(.06rem + .06vw), calc(1rem + 1vw))
 }
 
 a {
     text-decoration: none;
     color: $iceBlue;
+    &:hover {
+        background-color: $greenishCyan;
+    }   
+    &:focus {
+        background-color: $greenishCyan;
+    }
 }
 
 img {
@@ -58,7 +65,7 @@ img {
 }
 
 button {
-    @include font($playfair, calc(.65rem + .65vw), $iceBlue, 1px, 32px);
+    @include font($playfair, calc(.65rem + .65vw), $iceBlue, calc(.031rem + .031vw), calc(1rem + 1vw));
     background-color: $twilightBlue;
     border: none;
     padding: 5px;
@@ -90,7 +97,7 @@ header {
 
 nav {
     ul {
-        @include font($lato, calc(.65rem + .65vw), $black, 1px, 29px);
+        @include font($lato, calc(.65rem + .65vw), $black, calc(.031rem + .031vw), calc(.9rem + .9vw));
         display: flex;
         list-style-type: none;
         li {
@@ -101,10 +108,12 @@ nav {
             color: $iceBlue;
             transition: .2s;
             &:hover {
+                background-color: $transparent;
                 color: $greenishCyan;
                 transform: scale(1.2)
             }   
             &:focus {
+                background-color: $transparent;
                 color: $greenishCyan;
                 transform: scale(1.2);
             }
@@ -120,10 +129,18 @@ footer {
     p {
         color: $iceBlue;
     }
+    a {
+        &:hover {
+            background-color: $transparent;
+        }
+        &:focus {
+            background-color: $transparent;
+        }
+    }
 }
 
 .wrapper {
-    max-width: 1200px;
+    max-width: 1080px;
     width: 90%;
     margin: 0 auto;
 }
@@ -133,19 +150,4 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding-top: 30px;
-}
-
-.contact {
-    header {
-        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url(../../assets/contact-image-1.jpg)
-    }
-}
-
-
-/* find a better place for what's below!!!! */
-
-.more-info-link {
-    @include font($playfair, calc(.65rem + .65vw), 32px, 1px);
-    background-color: $twilightBlue;
-    padding: 10px;
 }

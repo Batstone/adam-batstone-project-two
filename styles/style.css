@@ -220,27 +220,27 @@ h1 {
 
 h2 {
   font-family: "Lato", sans-serif;
-  font-size: 5.5rem;
+  font-size: calc(2.2rem + 2.2vw);
   color: #D2F9F1;
-  letter-spacing: 6.7px;
-  line-height: 58px;
+  letter-spacing: calc(.18rem + .18vw);
+  line-height: calc(1.8rem + 1.8vw);
 }
 
 h3 {
   font-family: "Lato", sans-serif;
-  font-size: 3.9rem;
+  font-size: calc(2rem + 2vw);
   color: #0C5F4C;
-  letter-spacing: 6.7px;
-  line-height: 58px;
+  letter-spacing: calc(.18rem + .18vw);
+  line-height: calc(1.8rem + 1.8vw);
   margin: 0;
   padding: 0;
 }
 
 h4 {
   font-family: "Lato", sans-serif;
-  font-size: 2.2rem;
+  font-size: calc(1.1rem + 1.1vw);
   color: #0C5F4C;
-  letter-spacing: 3.8px;
+  letter-spacing: calc(.1rem + .1vw);
   line-height: auto;
   margin: 0;
   padding: 0;
@@ -248,25 +248,33 @@ h4 {
 
 h6 {
   font-family: "Lato", sans-serif;
-  font-size: 1.9rem;
+  font-size: calc(1rem + 1vw);
   color: #0C5F4C;
-  letter-spacing: 3.2px;
-  line-height: 32px;
+  letter-spacing: calc(.09rem + .09vw);
+  line-height: calc(1rem + 1vw);
   margin: 0;
   padding: 0;
 }
 
 p {
   font-family: "Lato", sans-serif;
-  font-size: 1.3rem;
+  font-size: calc(.6rem + .6vw);
   color: #2C2C2C;
-  letter-spacing: 2px;
-  line-height: 32px;
+  letter-spacing: calc(.06rem + .06vw);
+  line-height: calc(1rem + 1vw);
 }
 
 a {
   text-decoration: none;
   color: #FAFFFE;
+}
+
+a:hover {
+  background-color: #50E3C2;
+}
+
+a:focus {
+  background-color: #50E3C2;
 }
 
 img {
@@ -275,10 +283,10 @@ img {
 
 button {
   font-family: "Playfair Display SC", serif;
-  font-size: 1.3rem;
+  font-size: calc(.65rem + .65vw);
   color: #FAFFFE;
-  letter-spacing: 1px;
-  line-height: 32px;
+  letter-spacing: calc(.031rem + .031vw);
+  line-height: calc(1rem + 1vw);
   background-color: #063974;
   border: none;
   padding: 5px;
@@ -309,10 +317,10 @@ header {
 
 nav ul {
   font-family: "Lato", sans-serif;
-  font-size: 1.3rem;
+  font-size: calc(.65rem + .65vw);
   color: #2C2C2C;
-  letter-spacing: 1px;
-  line-height: 29px;
+  letter-spacing: calc(.031rem + .031vw);
+  line-height: calc(.9rem + .9vw);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -331,12 +339,14 @@ nav ul a {
 }
 
 nav ul a:hover {
+  background-color: rgba(0, 0, 0, 0);
   color: #50E3C2;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
 
 nav ul a:focus {
+  background-color: rgba(0, 0, 0, 0);
   color: #50E3C2;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
@@ -353,8 +363,16 @@ footer p {
   color: #FAFFFE;
 }
 
+footer a:hover {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+footer a:focus {
+  background-color: rgba(0, 0, 0, 0);
+}
+
 .wrapper {
-  max-width: 1200px;
+  max-width: 1080px;
   width: 90%;
   margin: 0 auto;
 }
@@ -370,22 +388,6 @@ footer p {
       -ms-flex-align: center;
           align-items: center;
   padding-top: 30px;
-}
-
-.contact header {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0))), url(../../assets/contact-image-1.jpg);
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url(../../assets/contact-image-1.jpg);
-}
-
-/* find a better place for what's below!!!! */
-.more-info-link {
-  font-family: "Playfair Display SC", serif;
-  font-size: 1.3rem;
-  color: 32px;
-  letter-spacing: 1px;
-  line-height: auto;
-  background-color: #063974;
-  padding: 10px;
 }
 
 .home header {
@@ -441,7 +443,7 @@ footer p {
 }
 
 .visit-guyana-content-container h4 {
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 
 .visit-guyana-content-container p {
@@ -521,7 +523,7 @@ footer p {
   font-weight: bold;
 }
 
-.links-container .links-container-title {
+.links-container-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -531,12 +533,28 @@ footer p {
   margin-bottom: 20px;
 }
 
-.links-container .links-container-title i {
+.links-container-title i {
   background-color: #50E3C2;
   color: #FAFFFE;
   padding: 12px;
   border-radius: 50%;
   margin-right: 25px;
+}
+
+.links-container-title a {
+  color: #0C5F4C;
+}
+
+.links-container-title a:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+  color: #50E3C2;
+}
+
+.links-container-title a:focus {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+  color: #50E3C2;
 }
 
 .more-info {
@@ -632,12 +650,22 @@ footer p {
   margin-bottom: 40px;
 }
 
+.more-info-link {
+  font-family: "Playfair Display SC", serif;
+  font-size: calc(.65rem + .65vw);
+  color: calc(1rem + 1vw);
+  letter-spacing: calc(.031rem + .031vw);
+  line-height: auto;
+  background-color: #063974;
+  padding: 10px;
+}
+
 .banner-img {
   background: url(../../assets/banner-image.jpg);
   background-position: center;
+  background-size: 100%;
   margin: -50px auto 10px;
-  height: 500px;
-  width: 100%;
+  height: 600px;
   background-repeat: no-repeat;
 }
 
@@ -661,11 +689,11 @@ footer p {
           align-items: center;
   text-align: center;
   width: 75%;
-  margin: 150px auto;
+  margin: 100px auto;
 }
 
 .free-trip-container h6 {
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 .free-trip-container p {
@@ -688,7 +716,7 @@ footer p {
 
 .blog-main-header {
   color: #D2F9F1;
-  margin-top: 225px;
+  margin-top: 175px;
 }
 
 .blog-post {
@@ -706,13 +734,18 @@ footer p {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  max-width: 70%;
+  width: 90%;
   margin: -175px 0 50px;
-  border-right: 5px solid #50E3C2;
-  border-bottom: 5px solid #50E3C2;
+  border-right: 3px solid #50E3C2;
+  border-bottom: 3px solid #50E3C2;
 }
 
-.blog-post-image-container img {
+.blog-post-img-container {
+  width: 99%;
+  margin-top: -5%;
+}
+
+.blog-post-img-container img {
   -webkit-box-shadow: 15px 15px #50E3C2;
           box-shadow: 15px 15px #50E3C2;
 }
@@ -733,13 +766,12 @@ footer p {
 
 .blog-author {
   font-family: "Lato", sans-serif;
-  font-size: 1.2rem;
+  font-size: calc(.6rem + .6vw);
   color: #063974;
   letter-spacing: 0.2px;
   line-height: auto;
   color: #063974;
   font-style: italic;
-  font-size: 1.2rem;
   margin-bottom: 25px;
 }
 
@@ -755,15 +787,15 @@ footer p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 30%;
+  width: 20%;
   margin-top: 150px;
 }
 
 .blog-right h6 {
   font-family: "Lato", sans-serif;
-  font-size: 1.4rem;
+  font-size: calc(.7rem + .7vw);
   color: #063974;
-  letter-spacing: 2.8px;
+  letter-spacing: calc(.062rem + .062vw);
   line-height: auto;
   font-weight: bold;
   margin: 15px 0;
@@ -771,11 +803,21 @@ footer p {
 
 .blog-right-container a {
   font-family: "Lato", sans-serif;
-  font-size: 1.3rem;
+  font-size: calc(.65rem + .65vw);
   color: #0C5F4C;
-  letter-spacing: 2px;
-  line-height: 38px;
+  letter-spacing: calc(.062rem + .062vw);
+  line-height: calc(1.18rem + 1.18vw);
   font-weight: bold;
+}
+
+.blog-right-container a:hover {
+  background-color: rgba(0, 0, 0, 0);
+  color: #50E3C2;
+}
+
+.blog-right-container a:focus {
+  background-color: rgba(0, 0, 0, 0);
+  color: #50E3C2;
 }
 
 .recent-posts ul li {
@@ -785,10 +827,20 @@ footer p {
 
 .recent-posts ul a {
   font-family: "Lato", sans-serif;
-  font-size: 1.3rem;
+  font-size: calc(.65rem + .65vw);
   color: #2C2C2C;
-  letter-spacing: 2px;
-  line-height: 32px;
+  letter-spacing: calc(.062rem + .062vw);
+  line-height: calc(1rem + 1vw);
+}
+
+.recent-posts ul a:hover {
+  background-color: rgba(0, 0, 0, 0);
+  color: #50E3C2;
+}
+
+.recent-posts ul a:focus {
+  background-color: rgba(0, 0, 0, 0);
+  color: #50E3C2;
 }
 
 .recent-posts ul li::before {
@@ -796,7 +848,7 @@ footer p {
   content: '\2022';
   color: #50E3C2;
   display: inline-block;
-  font-size: 2rem;
+  font-size: calc(1rem + 1vw);
   left: 0;
 }
 
@@ -838,10 +890,10 @@ footer p {
 
 .comments-container .comments-post-text p:first-child {
   font-family: "Lato", sans-serif;
-  font-size: 1.3rem;
+  font-size: calc(.65rem + .65vw);
   color: #063974;
-  letter-spacing: 2px;
-  line-height: 32px;
+  letter-spacing: calc(.062rem + .062vw);
+  line-height: calc(1rem + 1vw);
   font-weight: bold;
 }
 
@@ -947,7 +999,7 @@ footer p {
 .fab {
   width: 15px;
   color: #2C2C2C;
-  font-size: 1.8rem;
+  font-size: calc(.9rem + .9vw);
 }
 
 .fab:hover {
