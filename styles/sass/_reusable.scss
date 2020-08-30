@@ -15,37 +15,37 @@ $lato: 'Lato', sans-serif;
 }
 
 .logo {
-    @include font($playfair, 2.1rem, $greenishCyan)
+    @include font($playfair, calc(1.1rem + 1.1vw), $greenishCyan)
 }
    
 h1 {
-    @include font($playfair, 7em, $twilightBlue)
+    @include font($playfair, calc(3.5rem + 3.5vw), $twilightBlue)
 }
 
 h2 {
-    @include font($lato, 5.5rem, $lightLightBlue, 6.7px, 58px)
+    @include font($lato, cacl(2.2rem + 2.2vw), $lightLightBlue, 6.7px, 58px)
 }
 
 h3 {
-    @include font($lato, 3.9rem, $spruce, 6.7px, 58px);
+    @include font($lato, calc(2rem + 2vw), $spruce, 6.7px, 58px);
     margin: 0;
     padding: 0;
 }
 
 h4 {
-    @include font($lato, 2.2rem, $spruce, 3.8px);
+    @include font($lato, calc(1.1rem + 1.1vw), $spruce, 3.8px);
     margin: 0;
     padding: 0;
 }
    
 h6 {
-    @include font($lato, 1.9rem, $spruce, 3.2px, 32px);
+    @include font($lato, calc(1rem + 1vw), $spruce, 3.2px, 32px);
     margin: 0;
     padding: 0;
 }
 
 p {
-    @include font($lato, 1.3rem, $black, 2px, 32px)
+    @include font($lato, calc(.6rem + .6vw), $black, 2px, 32px)
 }
 
 a {
@@ -58,7 +58,7 @@ img {
 }
 
 button {
-    @include font($playfair, 1.3rem, $iceBlue, 1px, 32px);
+    @include font($playfair, calc(.65rem + .65vw), $iceBlue, 1px, 32px);
     background-color: $twilightBlue;
     border: none;
     padding: 5px;
@@ -90,7 +90,7 @@ header {
 
 nav {
     ul {
-        @include font($lato, 1.3rem, $black, 1px, 29px);
+        @include font($lato, calc(.65rem + .65vw), $black, 1px, 29px);
         display: flex;
         list-style-type: none;
         li {
@@ -145,7 +145,7 @@ footer {
 /* find a better place for what's below!!!! */
 
 .more-info-link {
-    @include font($playfair, 1.3rem, 32px, 1px);
+    @include font($playfair, calc(.65rem + .65vw), 32px, 1px);
     background-color: $twilightBlue;
     padding: 10px;
 }

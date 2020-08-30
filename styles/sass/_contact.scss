@@ -57,7 +57,7 @@
 .fab {
     width: 15px;
     color: $black;
-    font-size: 1.8rem;
+    font-size: calc(.9rem + .9vw);
     &:hover {
         color: $spruce;
     }

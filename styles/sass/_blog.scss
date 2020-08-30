@@ -49,10 +49,9 @@
 }
 
 .blog-author {
-    @include font($lato, 1.2rem, $twilightBlue, .2px);
+    @include font($lato, calc(.6rem + .6vw), $twilightBlue, .2px);
     color: $twilightBlue;
     font-style: italic;
-    font-size: 1.2rem;
     margin-bottom: 25px;
     span {
         font-weight: bold;
@@ -65,7 +64,7 @@
     width: 30%;
     margin-top: 150px;
     h6 {
-        @include font($lato, 1.4rem, $twilightBlue, 2.8px);
+        @include font($lato, calc(.7rem + .7vw), $twilightBlue, 2.8px);
         font-weight: bold;
         margin: 15px 0;
     }
@@ -73,7 +72,7 @@
 
 .blog-right-container {
     a {
-        @include font($lato, 1.3rem, $spruce, 2px, 38px);
+        @include font($lato, calc(.65rem + .65vw), $spruce, 2px, 38px);
         font-weight: bold;
     }
 }
@@ -85,7 +84,7 @@
             position: relative;
         }
         a {
-            @include font($lato, 1.3rem, $black, 2px, 32px)
+            @include font($lato, calc(.65rem + .65vw), $black, 2px, 32px)
         }
     }
 }
@@ -95,7 +94,7 @@
     content: '\2022';
     color: $greenishCyan;
     display: inline-block;
-    font-size: 2rem;
+    font-size: calc(1rem + 1vw);
     left: 0;
 }
 
@@ -125,7 +124,7 @@
     }
     .comments-post-text {
         p:first-child {
-            @include font($lato, 1.3rem, $twilightBlue, 2px, 32px);
+            @include font($lato, calc(.65rem + .65vw), $twilightBlue, 2px, 32px);
             font-weight: bold;
         }
     }
