@@ -315,6 +315,13 @@ header {
   background-repeat: no-repeat;
 }
 
+.fa-bars {
+  visibility: hidden;
+  color: #FAFFFE;
+  font-size: 2rem;
+  margin-right: 20px;
+}
+
 nav ul {
   font-family: "Lato", sans-serif;
   font-size: calc(.65rem + .65vw);
@@ -394,6 +401,12 @@ footer a:focus {
   html {
     font-size: 120%;
   }
+  .logo-nav-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .logo-nav-container p {
     margin-bottom: 20px;
   }
@@ -403,14 +416,31 @@ footer a:focus {
   .logo-nav-container nav ul li:first-child {
     margin-left: 0;
   }
-  .logo-nav-container .logo-nav-container {
-    -webkit-box-orient: vertical;
+}
+
+@media (max-width: 480px) {
+  .logo-nav-container {
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
-  .logo-nav-container .logo-nav-container p {
-    margin-bottom: 25px;
+  .logo-nav-container p {
+    margin-bottom: 20px;
+  }
+  .logo-nav-container nav {
+    display: none;
+  }
+  .logo-nav-container nav ul li {
+    margin-left: 50px;
+  }
+  .logo-nav-container nav ul li:first-child {
+    margin-left: 0;
+  }
+  .fa-bars {
+    visibility: visible;
+    color: #FAFFFE;
+    font-size: 2rem;
   }
 }
 
@@ -1181,51 +1211,27 @@ footer a:focus {
 }
 
 @media (max-width: 768px) {
-  html {
-    font-size: 120%;
+  .header-img-container {
+    display: none;
   }
-  .logo-nav-container {
+  .visit-guyana {
+    padding: 50px 0 50px;
+  }
+  .gallery-images {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .logo-nav-container p {
-    margin-bottom: 20px;
+  .gallery-images li {
+    margin-bottom: 75px;
   }
-  .logo-nav-container nav ul li {
-    margin-left: 50px;
+  .banner-img-container {
+    display: none;
   }
-  .logo-nav-container nav ul li:first-child {
-    margin-left: 0;
+  .free-trip-container {
+    margin: 200px auto;
   }
-}
-
-.header-img-container {
-  display: none;
-}
-
-.visit-guyana {
-  padding: 50px 0 50px;
-}
-
-.gallery-images {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.gallery-images li {
-  margin-bottom: 75px;
-}
-
-.banner-img-container {
-  display: none;
-}
-
-.free-trip-container {
-  margin: 200px auto;
 }
 
 @media (max-width: 650px) {
@@ -1290,7 +1296,7 @@ footer a:focus {
     font-size: 2rem;
   }
   .home-main-header h1 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
 }
 
@@ -1461,6 +1467,9 @@ footer a:focus {
 /* Landscape phones and down */
 @media (max-width: 480px) {
   .contact-main-header {
-    margin-top: 250px;
+    margin: 250px 50px 0;
+  }
+  .contact-main-header h2 {
+    font-size: 1.8rem;
   }
 }

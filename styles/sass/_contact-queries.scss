@@ -65,7 +65,11 @@
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
+    
     .contact-main-header {
-        margin-top: 250px;
+        margin: 250px 50px 0;
+        h2 {
+            font-size: 1.8rem;
+        }
     }
 }

@@ -103,30 +103,6 @@
 
 @media (max-width: 768px) {
 
-    html {
-        font-size: 120%;   
-    }
-
-    
-    .logo-nav-container {
-        flex-direction: column;
-
-        p {
-            margin-bottom: 20px;
-        }
-        nav {
-            ul {
-                li {
-                    margin-left: 50px;
-                    &:first-child {
-                        margin-left: 0;
-                    }
-                }          
-            }
-        }
-    }
-}
-    
     .header-img-container {
         display: none;
     }
@@ -150,6 +126,14 @@
         margin: 200px auto;
     }
 
+
+
+
+
+
+}
+    
+    
 
 
 @media (max-width: 650px) {
@@ -201,7 +185,7 @@
             font-size: 2rem;
         }
         h1 {
-            font-size: 2.5rem;
+            font-size: 2.2rem;
         }   
     }
 }

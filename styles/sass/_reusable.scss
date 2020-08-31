@@ -94,6 +94,13 @@ header {
     background-repeat: no-repeat
 }
 
+.fa-bars {
+    visibility: hidden;
+    color: $iceBlue;
+    font-size: 2rem;  
+    margin-right: 20px;  
+}
+
 nav {
     ul {
         @include font($lato, calc(.65rem + .65vw), $black, calc(.031rem + .031vw), calc(.9rem + .9vw));
@@ -151,12 +158,17 @@ footer {
     padding-top: 30px;
 }
 
+
+
 @media (max-width: 768px) {
 
     html {
         font-size: 120%;   
     }
+
     .logo-nav-container {
+        flex-direction: column;
+
         p {
             margin-bottom: 20px;
         }
@@ -170,11 +182,33 @@ footer {
                 }          
             }
         }
-        .logo-nav-container {
-            flex-direction: column;
-            p {
-                margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .logo-nav-container {
+        flex-direction: row;
+
+        p {
+            margin-bottom: 20px;
+        }
+        nav {
+            display: none;
+            ul {
+                li {
+                    margin-left: 50px;
+                    &:first-child {
+                        margin-left: 0;
+                    }
+                }          
             }
         }
     }
-}
+
+    .fa-bars {
+        visibility: visible;
+        color: $iceBlue;
+        font-size: 2rem;    
+    }
+} 
