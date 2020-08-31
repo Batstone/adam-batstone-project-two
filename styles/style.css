@@ -415,8 +415,8 @@ footer a:focus {
 }
 
 .home header {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0))), url(../../assets/home-image-1.jpg);
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url(../../assets/home-image-1.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0))), url(../assets/home-image-1.jpg);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url(../assets/home-image-1.jpg);
 }
 
 .header-text {
@@ -689,7 +689,7 @@ footer a:focus {
 }
 
 .banner-img {
-  background: url(../../assets/banner-image.jpg);
+  background: url(../assets/banner-image.jpg);
   background-position: center;
   background-size: 100%;
   margin: -50px auto 0;
@@ -729,8 +729,8 @@ footer a:focus {
 }
 
 .blog header {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0))), url(../../assets/blog-image-1.jpg);
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url(../../assets/blog-image-1.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0))), url(../assets/blog-image-1.jpg);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url(../assets/blog-image-1.jpg);
 }
 
 .flex-container {
@@ -964,8 +964,8 @@ footer a:focus {
 }
 
 .contact header {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0))), url(../../assets/contact-image-1.jpg);
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url(../../assets/contact-image-1.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0))), url(../assets/contact-image-1.jpg);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url(../assets/contact-image-1.jpg);
 }
 
 .contact-main-header {
@@ -1180,29 +1180,52 @@ footer a:focus {
   }
 }
 
-/* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
-  .header-img-container {
-    display: none;
+  html {
+    font-size: 120%;
   }
-  .visit-guyana {
-    padding: 50px 0 50px;
-  }
-  .gallery-images {
+  .logo-nav-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .gallery-images li {
-    margin-bottom: 75px;
+  .logo-nav-container p {
+    margin-bottom: 20px;
   }
-  .banner-img-container {
-    display: none;
+  .logo-nav-container nav ul li {
+    margin-left: 50px;
   }
-  .free-trip-container {
-    margin: 200px auto;
+  .logo-nav-container nav ul li:first-child {
+    margin-left: 0;
   }
+}
+
+.header-img-container {
+  display: none;
+}
+
+.visit-guyana {
+  padding: 50px 0 50px;
+}
+
+.gallery-images {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.gallery-images li {
+  margin-bottom: 75px;
+}
+
+.banner-img-container {
+  display: none;
+}
+
+.free-trip-container {
+  margin: 200px auto;
 }
 
 @media (max-width: 650px) {
@@ -1264,10 +1287,10 @@ footer a:focus {
     top: 150px;
   }
   .home-main-header h3 {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
   .home-main-header h1 {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
   }
 }
 
