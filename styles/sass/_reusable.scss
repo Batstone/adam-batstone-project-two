@@ -189,20 +189,9 @@ footer {
 
     .logo-nav-container {
         flex-direction: row;
-
-        p {
-            margin-bottom: 20px;
-        }
+        justify-content: space-between;
         nav {
             display: none;
-            ul {
-                li {
-                    margin-left: 50px;
-                    &:first-child {
-                        margin-left: 0;
-                    }
-                }          
-            }
         }
     }
 

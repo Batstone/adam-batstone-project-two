@@ -424,18 +424,12 @@ footer a:focus {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-  }
-  .logo-nav-container p {
-    margin-bottom: 20px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .logo-nav-container nav {
     display: none;
-  }
-  .logo-nav-container nav ul li {
-    margin-left: 50px;
-  }
-  .logo-nav-container nav ul li:first-child {
-    margin-left: 0;
   }
   .fa-bars {
     visibility: visible;
