@@ -1,0 +1,71 @@
+@media (max-width: 1200px) {
+    
+    .contact-flex {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .contact-form {
+        margin-left: 0;
+        width: 100%;
+        margin-bottom: 50px;
+        margin-left: 0;
+    }
+
+    .contact-form-right-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 50px;
+        margin-left: 0;
+        ul {
+            margin-bottom: 20px;
+            li {
+                display: inline-block;
+            }
+            a {
+                padding-right: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 780px) {
+
+    .contact-form {
+        form {
+            input {
+                width: 100%;
+            }
+            textarea {
+                margin-top: 35px;
+            }
+        }
+    }
+}
+
+@media (max-width: 650px) {
+
+    .contact-wrapper {
+        width: 100%;
+    }
+ 
+    .contact-flex {
+        width: 100%;
+    }
+
+    .contact-main-header {
+        margin-top: 320px;
+        margin-left: 100px;
+    }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    .contact-main-header {
+        margin-top: 250px;
+    }
+}

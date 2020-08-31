@@ -20,7 +20,7 @@ $transparent:rgba(0, 0, 0, 0.0);
 }
    
 h1 {
-    @include font($playfair, calc(3.5rem + 3.5vw), $twilightBlue)
+    @include font($playfair, calc(3.2rem + 3.2vw), $twilightBlue)
 }
 
 h2 {
@@ -77,7 +77,6 @@ form {
         border: none;
         border-bottom: 2px solid $greenishCyan;
     }
- 
     textarea {
         font-family: $lato;
         border: 2px solid $greenishCyan;
@@ -91,7 +90,7 @@ form {
 header {
     height: 60vh;
     background-size: cover;
-    background-position: center;
+    background-position: contain;
     background-repeat: no-repeat
 }
 
@@ -141,7 +140,7 @@ footer {
 
 .wrapper {
     max-width: 1080px;
-    width: 90%;
+    width: 70%;
     margin: 0 auto;
 }
 
@@ -150,4 +149,32 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding-top: 30px;
+}
+
+@media (max-width: 768px) {
+
+    html {
+        font-size: 120%;   
+    }
+    .logo-nav-container {
+        p {
+            margin-bottom: 20px;
+        }
+        nav {
+            ul {
+                li {
+                    margin-left: 50px;
+                    &:first-child {
+                        margin-left: 0;
+                    }
+                }          
+            }
+        }
+        .logo-nav-container {
+            flex-direction: column;
+            p {
+                margin-bottom: 25px;
+            }
+        }
+    }
 }

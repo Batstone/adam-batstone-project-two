@@ -150,7 +150,7 @@
 .comments-form {
     display: flex;
     flex-direction: column;
-    width: 55%;
+    max-width: 55%;
     position: relative;
     margin-bottom: 100px;
     form {

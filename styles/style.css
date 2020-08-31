@@ -199,7 +199,7 @@ textarea {
 }
 
 html {
-  font-size: 90%;
+  font-size: 100%;
 }
 
 .logo {
@@ -212,7 +212,7 @@ html {
 
 h1 {
   font-family: "Playfair Display SC", serif;
-  font-size: calc(3.5rem + 3.5vw);
+  font-size: calc(3.2rem + 3.2vw);
   color: #063974;
   letter-spacing: auto;
   line-height: auto;
@@ -311,7 +311,7 @@ form label {
 header {
   height: 60vh;
   background-size: cover;
-  background-position: center;
+  background-position: contain;
   background-repeat: no-repeat;
 }
 
@@ -373,7 +373,7 @@ footer a:focus {
 
 .wrapper {
   max-width: 1080px;
-  width: 90%;
+  width: 70%;
   margin: 0 auto;
 }
 
@@ -388,6 +388,30 @@ footer a:focus {
       -ms-flex-align: center;
           align-items: center;
   padding-top: 30px;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 120%;
+  }
+  .logo-nav-container p {
+    margin-bottom: 20px;
+  }
+  .logo-nav-container nav ul li {
+    margin-left: 50px;
+  }
+  .logo-nav-container nav ul li:first-child {
+    margin-left: 0;
+  }
+  .logo-nav-container .logo-nav-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .logo-nav-container .logo-nav-container p {
+    margin-bottom: 25px;
+  }
 }
 
 .home header {
@@ -416,7 +440,7 @@ footer a:focus {
 
 .header-img-container {
   position: absolute;
-  width: 600px;
+  width: 500px;
   top: 20%;
 }
 
@@ -451,8 +475,6 @@ footer a:focus {
 }
 
 .visit-guyana-img-container {
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
   -webkit-box-shadow: -15px 15px #50E3C2;
           box-shadow: -15px 15px #50E3C2;
 }
@@ -598,7 +620,7 @@ footer a:focus {
 
 .more-info-column-left .more-info-content-left {
   width: 600px;
-  margin-top: 10%;
+  margin-top: 20%;
   text-align: right;
 }
 
@@ -606,9 +628,14 @@ footer a:focus {
   margin-bottom: 10px;
 }
 
-.more-info-column-left .more-info-content-left p {
+.text-left {
   margin-bottom: 40px;
   margin-left: 75px;
+}
+
+.text-right {
+  margin-bottom: 40px;
+  margin-right: 75px;
 }
 
 .more-info-column-right {
@@ -646,10 +673,6 @@ footer a:focus {
   margin-bottom: 10px;
 }
 
-.more-info-column-right .more-info-content-right p {
-  margin-bottom: 40px;
-}
-
 .more-info-link {
   font-family: "Playfair Display SC", serif;
   font-size: calc(.65rem + .65vw);
@@ -660,11 +683,16 @@ footer a:focus {
   padding: 10px;
 }
 
+.banner-img-container {
+  background: -webkit-gradient(linear, left top, left bottom, from(#D2F9F1), to(#FAFFFE));
+  background: linear-gradient(#D2F9F1, #FAFFFE);
+}
+
 .banner-img {
   background: url(../../assets/banner-image.jpg);
   background-position: center;
   background-size: 100%;
-  margin: -50px auto 10px;
+  margin: -50px auto 0;
   height: 600px;
   background-repeat: no-repeat;
 }
@@ -905,7 +933,7 @@ footer a:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 55%;
+  max-width: 55%;
   position: relative;
   margin-bottom: 100px;
 }
@@ -923,6 +951,12 @@ footer a:focus {
 .comments-form form button {
   width: 100%;
   margin-bottom: 100px;
+}
+
+.contact-wrapper {
+  max-width: 1080px;
+  width: 70%;
+  margin: 0 auto;
 }
 
 .contact {
@@ -955,14 +989,12 @@ footer a:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 65%;
+  width: 70%;
   background-color: #FAFFFE;
   padding: 40px;
   -webkit-box-shadow: 15px 15px #50E3C2;
           box-shadow: 15px 15px #50E3C2;
-  margin-top: -80px;
-  margin-left: -15px;
-  margin-bottom: 100px;
+  margin: -80px 0 100px -15px;
 }
 
 .contact-form form input {
@@ -996,6 +1028,14 @@ footer a:focus {
   padding-right: 20px;
 }
 
+.contact-form-right-container ul a:hover {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.contact-form-right-container ul a:focus {
+  background-color: rgba(0, 0, 0, 0);
+}
+
 .fab {
   width: 15px;
   color: #2C2C2C;
@@ -1003,11 +1043,401 @@ footer a:focus {
 }
 
 .fab:hover {
-  color: #0C5F4C;
+  color: #50E3C2;
+}
+
+.fab:focus {
+  color: #50E3C2;
 }
 
 .contact-info address h6 {
   color: #2C2C2C;
   font-weight: bold;
   margin-bottom: 20px;
+}
+
+@media (max-width: 1200px) {
+  .more-info-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .more-info-column-left {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .more-info-column-left .more-info-img-container-left {
+    width: 100%;
+    margin-top: -30%;
+  }
+  .more-info-column-left .more-info-content-left {
+    margin-top: 10%;
+  }
+  .more-info-column-left .more-info-content-left a {
+    margin: 0 auto;
+  }
+  .more-info-column-right {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .more-info-column-right .more-info-img-container-right {
+    width: 100%;
+    margin-top: 15%;
+    margin-bottom: -30%;
+  }
+  .more-info-column-right .more-info-content-right {
+    margin-top: 10%;
+  }
+  .free-trip-container {
+    margin-top: 0;
+  }
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+  .home-main-header {
+    left: -5%;
+    top: 200px;
+  }
+  .visit-guyana {
+    padding: 100px 0 50px;
+  }
+  .visit-guyana-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .visit-guyana-img-container {
+    display: none;
+  }
+  .visit-guyana-content-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    margin-right: 0;
+    text-align: center;
+  }
+  .visit-guyana-content-container h4 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .visit-guyana-content-container a {
+    width: 40%;
+    text-align: center;
+  }
+  .links-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .links-container-title {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .links-container-title i {
+    margin-bottom: 25px;
+    margin-right: 0;
+  }
+  .links-container {
+    width: 100%;
+    text-align: center;
+  }
+  .links-container p {
+    margin-left: 0;
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  .header-img-container {
+    display: none;
+  }
+  .visit-guyana {
+    padding: 50px 0 50px;
+  }
+  .gallery-images {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .gallery-images li {
+    margin-bottom: 75px;
+  }
+  .banner-img-container {
+    display: none;
+  }
+  .free-trip-container {
+    margin: 200px auto;
+  }
+}
+
+@media (max-width: 650px) {
+  .home-main-header {
+    top: 150px;
+  }
+  .home-main-header h3 {
+    font-size: 2.5rem;
+  }
+  .home-main-header h1 {
+    font-size: 3rem;
+  }
+  .more-info-content-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 10%;
+    text-align: center;
+  }
+  .text-left {
+    text-align: center;
+    margin: 0 100px 25px;
+  }
+  .text-right {
+    margin: 0 100px 25px;
+  }
+  .more-info-content-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    margin-top: 10%;
+  }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .home-main-header {
+    top: 150px;
+  }
+  .home-main-header h3 {
+    font-size: 2.2rem;
+  }
+  .home-main-header h1 {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .flex-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blog-right {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .blog-right-img-container {
+    display: none;
+  }
+  .blog-right-container {
+    margin-bottom: 50px;
+    width: 80%;
+  }
+  .recent-posts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    margin-top: -20px;
+  }
+  .recent-posts h6 {
+    margin-right: 20px;
+  }
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+  .comments-container {
+    background-color: #D2F9F1;
+    padding: 20px 0;
+    max-width: 100%;
+  }
+  .comments-form {
+    max-width: 100%;
+    margin-top: 50px;
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  .comments-form form input {
+    width: 100%;
+  }
+  .comments-form form textarea {
+    margin-top: 35px;
+  }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .blog-post-flex {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-right: none;
+  }
+  .blog-post-img-container {
+    width: 100%;
+  }
+  .blog-post-img-container img {
+    -webkit-box-shadow: 0 15px 15px #50E3C2;
+            box-shadow: 0 15px 15px #50E3C2;
+  }
+  .blog-right-container {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  .blog-right-container h6 {
+    margin: 20px 0 10px 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  .contact-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contact-form {
+    margin-left: 0;
+    width: 100%;
+    margin-bottom: 50px;
+    margin-left: 0;
+  }
+  .contact-form-right-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 0;
+  }
+  .contact-form-right-container ul {
+    margin-bottom: 20px;
+  }
+  .contact-form-right-container ul li {
+    display: inline-block;
+  }
+  .contact-form-right-container ul a {
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 780px) {
+  .contact-form form input {
+    width: 100%;
+  }
+  .contact-form form textarea {
+    margin-top: 35px;
+  }
+}
+
+@media (max-width: 650px) {
+  .contact-wrapper {
+    width: 100%;
+  }
+  .contact-flex {
+    width: 100%;
+  }
+  .contact-main-header {
+    margin-top: 320px;
+    margin-left: 100px;
+  }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .contact-main-header {
+    margin-top: 250px;
+  }
 }
